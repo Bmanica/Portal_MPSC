@@ -1,0 +1,33 @@
+/* Empty. Add your own CSS if you like */
+.grid {
+    position: relative;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+    .grid .row {
+        background-color: transparent;
+        border: 0;
+        padding-right: 0;
+        position: relative;
+    }
+
+        .grid .row .col-md-3 {
+            min-height: 150px;
+        }
+
+        .grid .row .col-md-6 {
+            min-height: 300px;
+        }
+
+progress {
+    width: 100%;
+}
+
+.container {
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}?

@@ -1,0 +1,647 @@
+﻿<html ng-app="ionicApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <title>MPSC Transitions</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+    <link href="css/metro-bootstrap.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+
+</head>
+
+<body ng-controller="MyCtrl">
+
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7" align-title="center">
+        <ion-nav-back-button class="button-icon ion-arrow-left-c">
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-nav-view class="slide-left-right"></ion-nav-view>
+    <!-- Menu Principal -->
+    <script id="page1.html" type="text/ng-template">
+        <!-- The title of the ion-view will be shown on the navbar -->
+        <ion-view class="title" hide-back-button="true" title="{{mainTitle}}">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content>
+
+                <div class="grid">
+                    <div class="row col-md-12">
+                        <div id="eno" class="tile tile-lime col-xs-8" ui-sref="page2">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Noticias</h5>
+                            </a>
+                        </div>
+                        <div id="owt" class="tile tile-lime col-xs-8" style="display:none" ui-sref="page8">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Noticias</h5>
+                            </a>
+                        </div>
+                        <div class="tile tile-carrot col-xs-4" ui-sref="page13">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/commenting.png">
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Ouvidoria</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12">
+                        <div id="aus" class="tile tile-wisteria col-xs-6" ui-sref="page5">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/balance.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Diario Oficial</h5>
+                            </a>
+                        </div>
+                        <div id="one" class="tile tile-danger col-xs-6" ui-sref="page6">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/map.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Encontre o MPSC</h5>
+                            </a>
+                        </div>
+                        <div id="zwei" class="tile tile-pink col-xs-6" style="display:none" ui-sref="page9">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/balance.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Diario Oficial</h5>
+                            </a>
+                        </div>
+                        <div id="two" class="tile tile-asbestos col-xs-6" style="display:none" ui-sref="page1">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/map.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Encontre o MPSC(indisponivel offline)</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12">
+                        <div id="calc1" class="tile tile-blue col-xs-8" ui-sref="page7">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/calculator.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Calculadora CCO</h5>
+                            </a>
+                        </div>
+                        <div id="calc2" class="tile tile-blue col-xs-8" style="display:none" ui-sref="page12">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/calculator.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Calculadora CCO</h5>
+                            </a>
+                        </div>
+                        <div class="tile tile-clouds col-xs-4" ng-click="click(0)">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/twitter.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5 style="padding-top:10px">Twitter</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12">
+                        <div class="tile tile-clouds col-xs-6" ng-click="click(1)">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/youtube.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5 style="padding-top:10px">Youtube</h5>
+                            </a>
+                        </div>
+                        <div class="tile tile-clouds col-xs-6" ng-click="click(2)">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/facebook.png">
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5 style="padding-top:10px">Facebook</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Lista de Noticias -->
+    <script id="page2.html" type="text/ng-template">
+        <ion-view title="{{newsTitle}}">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content>
+                <div class="grid">
+                    <div class="row col-md-12">
+                        <div class="tile tile-peter river col-xs-6" ng-click="goto('{{items[0].linkd}}')" ui-sref="page3">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                                </div>
+                                <a href="#">
+                                    <h5>{{items[0].title}}</h5>
+                                    <h6>{{items[0].pubDate}}</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tile tile-emerald col-xs-6" ng-click="goto('{{items[1].linkd}}')" ui-sref="page3">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                </div>
+                                <a href="#">
+                                    <h5>{{items[1].title}}</h5>
+                                    <h6>{{items[1].pubDate}}</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12">
+                        <div class="tile tile-alizarin col-xs-6" ng-click="goto('{{items[2].linkd}}')" ui-sref="page3">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                </div>
+                                <a href="#">
+                                    <h5>{{items[2].title}}</h5>
+                                    <h6>{{items[2].pubDate}}</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tile tile-wisteria col-xs-6" ng-click="goto('{{items[3].linkd}}')" ui-sref="page3">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                </div>
+                                <a href="#">
+                                    <h5>{{items[3].title}}</h5>
+                                    <h6>{{items[3].pubDate}}</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12"></div>
+                    <div class="row col-md-12">
+                        <div class="tile tile-green col-xs-6" ng-click="goto('{{items[4].linkd}}')" ui-sref="page3">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                </div>
+                                <a href="#">
+                                    <h5>{{items[4].title}}</h5>
+                                    <h6>{{items[4].pubDate}}</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Noticia -->
+    <script id="page3.html" type="text/ng-template">
+        <ion-view title="Noticias">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <iframe id="frame" style="width: 100%; height:100%; margin-left:0%; margin-top:0%;" ng-src="{{frameContent}}"></iframe>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Denuncia -->
+    <script id="page4.html" type="text/ng-template">
+        <ion-view title="Ouvidoria">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <iframe id="frame" style="width: 100%; height:100%; margin-left:0%; margin-top:0%;" ng-src="abrirCadastroManifestacao.do.html"></iframe>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Diario Oficial -->
+    <script id="page5.html" type="text/ng-template">
+        <ion-view title="Diario Oficial">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                </button>
+            </ion-nav-buttons>
+            <!-- <div id="content" style="height: auto; width: auto; overflow: auto; -webkit-overflow-scrolling:touch;">
+                    <iframe height="100%" scrolling="no" width="100% "> iframe content here </iframe>
+            </div>
+                                                  <iframe align="right" scrolling="yes" style="width: 100%; height:100%; margin-left:0%; margin-top:0%;" ng-repeat="link in data.links | filter : data.filter" ng-src="{{link.link}}"></iframe>
+             -->
+
+            <ion-content class="has-header">
+                <iframe scrolling="yes" style="border: 0pt solid; width: 100%; height:100%; margin-left:0%; margin-top:0%;" ng-repeat="link in data.links | filter : data.filter" ng-src="{{link.link}}"></iframe>
+            </ion-content>
+            <ion-footer-bar>
+                <div class="button-bar bar-stable">
+                    <a style="width:10vw" class="button" ng-click="data.filter='last'; clickAnimation(1)" ng-class="{'active':var==1 || var==null}">&Uacute;ltima</a>
+                    <a style="width:10vw" class="button" ng-click="data.filter='previous'; clickAnimation(2)" ng-class="{'active':var==2}">Anteriores</a>
+                    <a style="width:10vw" class="button" ng-click="data.filter='old'; clickAnimation(3)" ng-class="{'active':var==3}">Antigas</a>
+                </div>
+            </ion-footer-bar>
+        </ion-view>
+    </script>
+    <!-- Mapa promotoria -->
+    <script id="page6.html" type="text/ng-template">
+        <ion-view title="Encontre uma Promotoria">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <iframe id="frame" scrolling="no" style="width: 100%; height:130%; margin-left:0%; margin-top:0%;" ng-src="http://www.mpsc.mp.br/mobile/encontre-uma-promotoria-de-justica?bScroll=1&bApp=1"></iframe>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Calculadora -->
+    <script id="page7.html" type="text/ng-template">
+        <ion-view title="Calculadora de antecipação de prestações">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                    <img src="http://gedes/piwik/piwik.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <div id="one1" class="item item-text-wrap" ui-sref="page11">
+                    <h4>Caso voc&ecirc; tenha firmado seu contrato at&eacute; 04.05.2014, utilize a calculadora abaixo.</h4>
+                    <a href="#">
+                        <button class="button button-block button-stable">{{cliqueaqui}}</button>
+                    </a>
+                </div>
+                <div class="item item-text-wrap" ui-sref="page10">
+                    <h4>Caso voc&ecirc; tenha firmado seu contrato a partir de 05.05.2014, utilize a calculadora abaixo.</h4>
+                    <a href="#"><button class="button button-block button-stable">{{cliqueaqui}}</button></a>
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Noticias Offline-->
+    <script id="page8.html" type="text/ng-template">
+        <ion-view title="{{newsTitle}}">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content>
+                <ion-content class="list">
+                    <a ng-repeat="item in items"
+                       class="item item-thumbnail-left item-text-wrap">
+
+                        <img ng-src="{{ item.img }}">
+                        <h2>{{ item.title }}</h2>
+                        <h4>{{item.pubDate}}</h4>
+                    </a>
+                </ion-content>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Diario Oficial Offline -->
+    <script id="page9.html" type="text/ng-template">
+        <ion-view title="Diario Oficial">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+
+            <ion-content>
+                <style>
+                    .grid {
+                        position: relative;
+                        padding-top: 5px;
+                        padding-left: 10px;
+                    }
+
+                        .grid .row {
+                            background-color: transparent;
+                            border: 0;
+                            padding-right: 0;
+                            position: relative;
+                        }
+
+                            .grid .row .col-md-3 {
+                                min-height: 150px;
+                            }
+
+                            .grid .row .col-md-6 {
+                                min-height: 300px;
+                            }
+
+                    progress {
+                        width: 100%;
+                    }
+                </style>
+                <div class="grid">
+                    <div class="row col-md-12">
+                        <div class="tile tile-lime col-xs-8" ui-sref="" ng-click="show()">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5>Visualizar Ultimo Diario Oficial</h5>
+                            </a>
+                        </div>
+                        <div class="tile tile-lime col-xs-8" style="display:none" ui-sref="page1">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/newspaper.png">
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5></h5>
+                            </a>
+                        </div>
+                        <div class="tile tile-carrot col-xs-4" ui-sref="page1">
+                            <div class="tile-content">
+                                <div class="tile-icon-large">
+                                    <img src="img/commenting.png">
+                                </div>
+                            </div>
+                            <a href="#">
+                                <h5></h5>
+                            </a>
+                        </div>
+                        <div class="row col-md-12"></div>
+                        <div class="row col-md-12"></div>
+                    </div>
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Calculadora -->
+    <script id="page10.html" type="text/ng-template">
+        <ion-view title="Calculadora">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <div class="list">
+                    <form name="CalcCCOForm">
+                        <div class="card">
+                            <div class="item item-text-wrap">Resultado apenas informativo. N&atilde;o descarte outras alternativas de c&aacute;lculo.</div>
+                        </div>
+                        <label class="item item-input">
+                            <span class="input-label">{{descVlrParcela}}</span>
+                            <input type="number" placeholder="Valor da parcela" ng-model="tela.vlrParcela" name="vlrParcela" ng-required="true" />
+                        </label>
+                        <div class="card ion-alert assertive" ng-show="CalcCCOForm.vlrParcela.$error.required && CalcCCOForm.vlrParcela.$dirty">
+                            Favor informar o valor da parcela
+                        </div>
+                        <label class="item item-input">
+                            <span class="input-label">Tava de juros (ao m&ecirc;s)</span>
+                            <input type="number" placeholder="Tava de juros (ao m&ecirc;s)" ng-model="tela.txJuros" name="txJuros" ng-required="true" />
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">{{descDataVencimento}}</span>
+                            <input type="number" placeholder="{{descDataVencimento}}" ng-model="tela.dtVencimento" name="dtVencimento" ng-required="true" />
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">Data de quita&ccedil;&atilde;o</span>
+                            <input type="date" placeholder="Data de quita&ccedil;&atilde;o" ng-model="tela.dtQuitacao" name="dtQuitacao" ng-required="true" />
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">{{descQtdParcelas}}</span>
+                            <input type="number" placeholder="{{descQtdParcelas}}" ng-model="tela.qtdParcelas" name="qtdParcelas" ng-required="true" />
+                        </label>
+                        <button class="button button-stable" ng-disabled="CalcCCOForm.$invalid" ng-click="mostraCalculo(tela)">
+                            Calcular
+                        </button>
+
+                        <div class="row" ng-show="TemRetorno()" style="margin-left:5px">
+                            <div class="col col-33"><h5>Vencimento</h5></div>
+                            <div class="col col-33"><h5>Parcela</h5></div>
+                            <div class="col col-33"><h5>Acumulado</h5></div>
+                        </div>
+                        <div class="row" ng-repeat="r in retorno" style="margin-left:5px">
+                            <div class="col col-33"><h6>{{r.dtVencimento | date:'dd/MM/yyyy'}}</h6></div>
+                            <div class="col col-33"><h6>R$ {{r.vlrParcela.toFixed(2)}}</h6></div>
+                            <div class="col col-33"><h6>R$ {{r.vlrAcumulado.toFixed(2)}}</h6></div>
+                        </div>
+                        <div class="row" ng-show="TemRetorno()" style="margin-left:5px">
+                            <div class="col"><h5>Valor total para quitação em {{dtPagamento | date:'dd/MM/yyyy'}}: R$ {{totalAcumulado.toFixed(2)}}</h5></div>
+                        </div>
+                        <div class="row" ng-show="TemRetorno()" style="margin-left:5px">
+                            <div class="col"><h6>* A taxa de desconto utilizada no cálculo do valor presente do financiamento foi definida em consonância com o disposto no art. 2º da Resolução CMN n. 3.516/2007.</h6></div>
+                        </div>
+                    </form>
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Calculadora web -->
+    <script id="page11.html" type="text/ng-template">
+        <ion-view title="Calculadora">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <iframe id="frame" style="width: 100%; height:100%; margin-left:0%; margin-top:0%;" ng-src="http://portal.mp.sc.gov.br/portal/webforms/calculadoracco/mobile.aspx?master=branco"></iframe>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Calculadora Offline -->
+    <script id="page12.html" type="text/ng-template">
+        <ion-view title="Calculadora de antecipação de prestações">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <div class="item item-text-wrap" ui-sref="page10">
+                    <h4>Caso voc&ecirc; tenha firmado seu contrato a partir de 05.05.2014, utilize a calculadora abaixo.</h4>
+                    <a href="#"><button class="button button-block button-stable">{{cliqueaqui}}</button></a>
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+    <!-- Formulario Ouvidoria -->
+    <script id="page13.html" type="text/ng-template">
+        <ion-view title="Ouvidoria">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <div class="list">
+
+                    <div class="item item-divider">
+                        Modo de manifesta&ccedil;&atilde;o: {{ data.clientSide }}
+                    </div>
+
+                    <ion-radio ng-repeat="item in clientSideList"
+                               ng-value="item.value"
+                               ng-model="data.clientSide"
+                               ng-checked="item.checked"
+                               ng-change="formModel()">
+                        {{ item.text }}
+                    </ion-radio>
+
+                    <div class="item item-divider">
+                        Tipo de manifesta&ccedil;&atilde;o: {{ data.serverSide }}
+                    </div>
+
+                    <ion-radio ng-repeat="item in serverSideList"
+                               ng-value="item.value"
+                               ng-model="data.serverSide"
+                               ng-checked="item.checked"
+                               ng-change="formModel()"
+                               name="server-side">
+                        {{ item.text }}
+                    </ion-radio>
+
+                </div>
+                <div>
+                    <button class="button button-block button-balanced" ui-sref={{page_selector}}>
+                        Continuar
+                    </button>
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+
+    <script id="page14.html" type="text/ng-template">
+        <ion-view title="{{title_type}} - {{title_mode}}">
+            <ion-nav-buttons side="right">
+                <button class="button-icon">
+                    <img src="img/iconmpsc.png" height="25" style="padding-top:4px" />
+                </button>
+            </ion-nav-buttons>
+            <ion-content class="has-header has-footer">
+                <form name="faleComigoForm" class="falecomigo" novalidate form-manager>
+
+                    <div>
+                        <button class="button button-block button-stable">
+                            Dados Pessoais
+                        </button>
+                    </div>
+
+                    <div>
+                        <label class="item item-input">
+                            <input ng-model="message.name" name="fieldEmail" type="text" placeholder="Nome" required ng-maxlength="50">
+                        </label>
+                        <label class="item item-input">
+                            <input ng-model="message.cpf" name="fieldSubject" type="text" placeholder="CPF" required ng-minlength="11" ng-maxlength="11">
+                        </label>
+                        <label class="item item-input">
+                            <textarea ng-model="message.body" name="fieldBody" placeholder="Mensagem" rows="3" required ng-minlength="2" ng-maxlength="70"></textarea>
+                        </label>
+                        <div class="item item-input item-select">
+                            <div class="input-label">
+                                Sexo
+                            </div>
+                            <select>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                            </select>
+                        </div>
+                        <label class="item item-input">
+                            <input ng-model="message.phone" name="fieldSubject" type="tel" placeholder="Telefone" required ng-minlength="10" ng-maxlength="10">
+                        </label>
+                        <label class="item item-input">
+                            <input ng-model="message.cep" name="fieldSubject" type="text" placeholder="CEP" required ng-minlength="8" ng-maxlength="8">
+                        </label>
+
+                    </div>
+
+                    <div class="padding container">
+                        <div class="row">
+                            <button ng-click="submit()" class="button button-balanced  button-small col col-40 col-offset-10"> Enviar </button>
+                        </div>
+                    </div>
+                </form>
+            </ion-content>
+        </ion-view>
+    </script>
+</body>
+
+</html>
